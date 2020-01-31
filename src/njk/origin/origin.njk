@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ objGlobal.projectTitle + '-' + pageHeadTitle }}</title>
+    {% for cssFile in objGlobal['common']['arrCssFile'] %}
+      <link rel="stylesheet" href="{{ 'css/' + cssFile + '.css' + '?v=' + intRandomNumber }}">
+    {% endfor %}
+
+    {% for cssFile in objGlobal[namepage]['arrCssFile'] %}
+      <link rel="stylesheet" href="{{ 'css/' + cssFile + '.css' + '?v=' + intRandomNumber }}">
+    {% endfor %}
+
+    {% for jsFile in objGlobal['common']['arrJsFile'] %}
+      <script src="{{ 'js/' + jsFile + '.js' + '?v=' + intRandomNumber }}"></script>
+    {% endfor %}
+  </head>
+  <body class='{{ bodyClass }}'>
+
+    {% block header %}{% endblock %}
+
+    {% block body %}{% endblock %}
+
+    {% block footer %}{% endblock %}
+
+    {% for jsFile in objGlobal[namepage]['arrJsFile'] %}
+      <script src="{{ 'js/' + jsFile + '.js' + '?v=' + intRandomNumber }}"></script>
+    {% endfor %}
+
+    {% block script %}{% endblock %}
+  </body>
+</html>

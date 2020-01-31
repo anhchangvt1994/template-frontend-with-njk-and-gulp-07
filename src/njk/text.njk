@@ -1,0 +1,16 @@
+{% extends "./origin/origin.njk" %}
+
+{% set bodyClass = 'textPage' %}
+{% set pageHeadTitle = 'text' %}
+
+{% block header %}
+  {% include "./header/header.njk" %}
+{% endblock %}
+
+{% block body %}
+  {% include "./text/index.njk" %}
+{% endblock %}
+
+{% block footer %}
+  {% include "./footer/footer.njk" %}
+{% endblock %}

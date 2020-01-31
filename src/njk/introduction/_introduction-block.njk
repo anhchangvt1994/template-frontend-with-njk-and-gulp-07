@@ -1,0 +1,9 @@
+<div class="introduction__block">
+  <div class="introduction__wrap">
+    {% for imageSrc in arrImageSrc %}
+      <div class="introduction__grid-item">
+        <img src="{{ 'images/' + imageSrc }}" />
+      </div>
+    {% endfor %}
+  </div>
+</div>

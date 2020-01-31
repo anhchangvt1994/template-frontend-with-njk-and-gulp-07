@@ -1,0 +1,22 @@
+{% extends "./origin/origin.njk" %}
+
+{% set bodyClass = 'introductionPage' %}
+{% set pageHeadTitle = 'introduction' %}
+
+<!-- ===============Header=============== -->
+
+{% block header %}
+  {% include "./header/header.njk" %}
+{% endblock %}
+
+<!-- ===============Body=============== -->
+
+{% block body %}
+  {% include "./introduction/index.njk" %}
+{% endblock %}
+
+<!-- ===============Footer=============== -->
+
+{% block footer %}
+  {% include "./footer/footer.njk" %}
+{% endblock %}

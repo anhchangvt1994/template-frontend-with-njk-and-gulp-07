@@ -1,0 +1,9 @@
+@import "introduction-block";
+
+.introduction {
+  &__layout {
+    min-width: 1320px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}

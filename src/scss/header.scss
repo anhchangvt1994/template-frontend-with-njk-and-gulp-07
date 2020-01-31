@@ -1,0 +1,12 @@
+.header {
+  &__wrap {
+    background: #b3ee3a;
+    padding: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
